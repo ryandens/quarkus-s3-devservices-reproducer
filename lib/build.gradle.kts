@@ -17,7 +17,9 @@ repositories {
 
 dependencies {
     implementation(platform(libs.quarkus.bom))
+    implementation(platform(libs.quarkus.amazon.bom))
     implementation("io.quarkus:quarkus-arc")
+    implementation("io.quarkiverse.amazonservices:quarkus-amazon-s3")
     implementation("io.smallrye.config:smallrye-config")
     implementation("jakarta.enterprise:jakarta.enterprise.cdi-api")
     // Use JUnit Jupiter for testing.
