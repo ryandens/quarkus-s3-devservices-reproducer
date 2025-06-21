@@ -1,7 +1,7 @@
-# Quarkus Component Test Reproducer
+# Quarkus S3 Devservices Test Reproducer
 
-The introduction of a QuarkusTest causes the QuarkusComponentTest to fail.
+Upgrading Quarkus causes a test suite with multiple `QuarkusTest`s that use an S3 devservice to fail.
 
 
-1. Build scan without the quarkus test: https://scans.gradle.com/s/lob2novma3rom/tests/overview
-2. Build scan with the quarkus test: https://scans.gradle.com/s/wy5jexvami6nw/tests/overview
+1. Successful build scan: <>
+2. Failed build scan after upgrade: <>
