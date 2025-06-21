@@ -10,5 +10,5 @@ plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "0.8.0"
 }
 
-rootProject.name = "quarkus-component-test-reproducer"
+rootProject.name = "quarkus-s3-devservices-reproducer"
 include("lib")
