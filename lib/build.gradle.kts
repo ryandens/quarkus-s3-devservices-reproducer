@@ -39,6 +39,10 @@ dependencies {
     testImplementation("io.quarkus:quarkus-junit5-component")
 
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
+    constraints {
+        api("io.quarkiverse.amazonservices:quarkus-amazon-s3:3.4.1")
+    }
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
