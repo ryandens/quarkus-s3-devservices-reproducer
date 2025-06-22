@@ -8,11 +8,21 @@
 plugins {
     `java-library`
     alias(libs.plugins.quarkus)
+    alias(libs.plugins.spotless)
 }
 
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
+}
+
+spotless {
+    java {
+        googleJavaFormat()
+    }
+    kotlinGradle {
+        ktlint()
+    }
 }
 
 dependencies {

@@ -13,3 +13,4 @@ junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "jun
 
 [plugins]
 quarkus = { id = "io.quarkus", version.ref = "quarkus" }
+spotless = { id = "com.diffplug.spotless", version = "7.0.4" }
