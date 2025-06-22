@@ -8,14 +8,14 @@ import software.amazon.awssdk.services.s3.S3Client;
 import software.amazon.awssdk.services.s3.model.PutObjectRequest;
 
 @QuarkusTest
-final class ExampleServiceQuarkusTest {
+public class AnotherQuarkusTest {
 
   @Inject S3Client s3Client;
 
   @Test
-  void name() {
+  void foo() {
     s3Client.putObject(
-        PutObjectRequest.builder().bucket("test-bucket").key("ExampleServiceQuarkusTest").build(),
+        PutObjectRequest.builder().bucket("test-bucket").key("AnotherQuarkusTest").build(),
         RequestBody.fromBytes("Hello".getBytes()));
   }
 }
