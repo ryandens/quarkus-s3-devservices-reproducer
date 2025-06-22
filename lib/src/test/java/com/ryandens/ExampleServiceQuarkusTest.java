@@ -4,13 +4,11 @@ import io.quarkus.test.common.WithTestResource;
 import io.quarkus.test.junit.QuarkusTest;
 import jakarta.inject.Inject;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInstance;
 import software.amazon.awssdk.core.sync.RequestBody;
 import software.amazon.awssdk.services.s3.S3Client;
 import software.amazon.awssdk.services.s3.model.PutObjectRequest;
 
 @QuarkusTest
-@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @WithTestResource(ExampleTestResource.class)
 final class ExampleServiceQuarkusTest {
 
