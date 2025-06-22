@@ -1,5 +1,6 @@
 package com.ryandens;
 
+import io.quarkus.test.common.WithTestResource;
 import io.quarkus.test.junit.QuarkusTest;
 import jakarta.inject.Inject;
 import org.junit.jupiter.api.Test;
@@ -10,6 +11,7 @@ import software.amazon.awssdk.services.s3.model.PutObjectRequest;
 
 @QuarkusTest
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
+@WithTestResource(ExampleTestResource.class)
 final class ExampleServiceQuarkusTest {
 
   @Inject S3Client s3Client;
