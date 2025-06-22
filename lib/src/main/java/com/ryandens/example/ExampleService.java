@@ -6,10 +6,9 @@ import jakarta.inject.Inject;
 @ApplicationScoped
 public class ExampleService {
 
-    @Inject
-    ExampleConfig exampleConfig;
+  @Inject ExampleConfig exampleConfig;
 
-    public ExampleStrategy getStrategy() {
-        return exampleConfig.strategy();
-    }
+  public ExampleStrategy getStrategy() {
+    return exampleConfig.strategy();
+  }
 }
