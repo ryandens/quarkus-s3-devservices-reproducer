@@ -30,6 +30,7 @@ dependencies {
     implementation(platform(libs.quarkus.amazon.bom))
     implementation("io.quarkus:quarkus-arc")
     implementation("io.quarkiverse.amazonservices:quarkus-amazon-s3")
+    runtimeOnly("software.amazon.awssdk:url-connection-client")
     implementation("io.smallrye.config:smallrye-config")
     implementation("jakarta.enterprise:jakarta.enterprise.cdi-api")
     // Use JUnit Jupiter for testing.
