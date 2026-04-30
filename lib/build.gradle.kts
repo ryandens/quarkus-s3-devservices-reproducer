@@ -42,14 +42,14 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
     constraints {
-        api("io.quarkiverse.amazonservices:quarkus-amazon-s3:3.4.1")
+//        api("io.quarkiverse.amazonservices:quarkus-amazon-s3:3.4.1")
     }
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
+        languageVersion = JavaLanguageVersion.of(26)
     }
 }
 
