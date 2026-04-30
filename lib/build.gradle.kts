@@ -29,8 +29,8 @@ dependencies {
     implementation(platform(libs.quarkus.bom))
     implementation(platform(libs.quarkus.amazon.bom))
     implementation("io.quarkus:quarkus-arc")
-    implementation("io.quarkiverse.amazonservices:quarkus-amazon-s3")
-    implementation("io.quarkiverse.amazonservices:quarkus-amazon-s3-deployment")
+    implementation("io.quarkiverse.amazonservices:quarkus-amazon-s3:3.18.0")
+    implementation("io.quarkiverse.amazonservices:quarkus-amazon-s3-deployment:3.18.0")
     runtimeOnly("software.amazon.awssdk:url-connection-client")
     implementation("io.smallrye.config:smallrye-config")
     implementation("jakarta.enterprise:jakarta.enterprise.cdi-api")
@@ -42,7 +42,7 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
     constraints {
-//        api("io.quarkiverse.amazonservices:quarkus-amazon-s3:3.4.1")
+        api("io.quarkiverse.amazonservices:quarkus-amazon-s3:3.18.0")
     }
 }
 
